@@ -24,6 +24,16 @@
         </div>
     </section>
 
+    <section id="uninstallation" class="container">
+        <h2 class="mt-5">Uninstallation</h2>
+        <p>Uninstall AICommand with just one command and remove it from your system.</p>
+        <div class="command-container d-inline-flex">
+            <pre class="mb-0"><code id="uninstall-command">bash -c "$(curl -fsSL https://ugoi.github.io/AICommand_Page/download/uninstall.sh)"</code></pre>
+            <button id="uninstall-copy-button" class="btn btn-danger ml-2" onclick="copyUninstallCommandToClipboard()">Copy</button>
+        </div>
+    </section>
+    
+
     <section id="usage" class="container">
         <h2 class="mt-5">Usage</h2>
         <p>Once installed, you can start using AICommand by running:</p>
