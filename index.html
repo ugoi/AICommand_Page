@@ -1,72 +1,36 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>AICommand - Your AI Assistant</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AICommand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+<body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container">
-          <a class="navbar-brand" href="#">AICommand</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        <h1>AICommand</h1>
+        <p>A natural language interface for executing terminal commands</p>
     </header>
 
-    <section class="jumbotron text-center">
-      <div class="container">
-        <h1 class="jumbotron-heading">AICommand - Your AI Assistant</h1>
-        <p class="lead">AICommand is an AI-powered virtual assistant that can help you with various tasks, such as scheduling meetings, managing emails, and much more.</p>
-        <p>
-          <button class="btn btn-primary my-2" id="copyButton" data-clipboard-target="#bashCommand">Copy Bash Command</button>
-        </p>
-        <p class="lead">To install AICommand, run the following command in your terminal:</p>
-        <p><code id="bashCommand">bash -c "$(curl https://ugoi.github.io/AICommand_Page/download/install.sh)"</code></p>
-      </div>
+    <section id="installation">
+        <h2>Installation</h2>
+        <p>To install AICommand, run the following command in your terminal:</p>
+        <pre><code>bash -c "$(curl -fsSL https://yourusername.github.io/AICommand_Page/install.sh)"</code></pre>
     </section>
 
-    <footer>
-      <div class="container">
-        <p>&copy; 2023 AICommand. All Rights Reserved.</p>
-      </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    
-    <!-- Clipboard JS -->
-    <script src="js/clipboard.min.js"></script>
-
-    <!-- Custom JS -->
-    <script>
-      var clipboard = new ClipboardJS('#copyButton');
-    </script>
-  </body>
+    <section id="usage">
+        <h2>Usage</h2>
+        <p>Once installed, you can start using AICommand by running:</p>
+        <code>ai_command <your-natural-language-command></code></pre>
+            <p>Here are a few examples of natural language commands you can use:</p>
+            <ul>
+            <li>Create a new folder named MyProject</li>
+            <li>Show me the list of files in the current directory</li>
+            <li>Delete the file called example.txt</li>
+            </ul>
+            </section>
+            <script src="script.js"></script>
+</body>
 </html>
