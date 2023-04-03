@@ -24,15 +24,7 @@ To install AICommand, follow the instructions below for your specific operating 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/AICommand.git
-```
-
-2. Build the project:
-
-```bash
-cd AICommand
-mkdir build && cd build
-cmake ..
+bash -c "$(curl https://ugoi.github.io/AICommand_Page/download/install.sh)"
 ```
 
 ### Linux
