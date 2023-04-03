@@ -105,7 +105,7 @@
 # }
 
 ai_thing() {
-  output=$(./ai_thing.py "$@")
+  output=$(~/ai_thing.py "$@")
 
   # Use a different method to split the output
   confirmation_message=$(echo "$output" | head -n 1)
