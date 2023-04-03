@@ -6,34 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AICommand</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
 <body>
-    <header>
-        <h1>AICommand</h1>
-        <p>A natural language interface for executing terminal commands</p>
+    <header class="container text-center">
+        <h1 class="display-4 mt-5">AICommand</h1>
+        <p class="lead">A natural language interface for executing terminal commands</p>
     </header>
 
-    <section id="installation">
-        <h2>Installation</h2>
+    <section id="installation" class="container">
+        <h2 class="mt-5">Installation</h2>
         <p>Install AICommand with just one command and start using natural language to interact with your terminal.</p>
-        <div class="command-container">
-            <pre><code id="install-command">bash -c "$(curl -fsSL https://ugoi.github.io/AICommand_Page/download/install.sh)"</code></pre>
-            <button id="copy-button" onclick="copyToClipboard()">Copy</button>
+        <div class="command-container d-inline-flex">
+            <pre class="mb-0"><code id="install-command">bash -c "$(curl -fsSL https://ugoi.github.io/AICommand_Page/download/install.sh)"</code></pre>
+            <button id="copy-button" class="btn btn-primary ml-2" onclick="copyToClipboard()">Copy</button>
         </div>
     </section>
 
-    <section id="usage">
-        <h2>Usage</h2>
+    <section id="usage" class="container">
+        <h2 class="mt-5">Usage</h2>
         <p>Once installed, you can start using AICommand by running:</p>
-        <code>ai_command <your-natural-language-command></code></pre>
+        <code>ai_command &lt;your-natural-language-command&gt;</code>
             <p>Here are a few examples of natural language commands you can use:</p>
             <ul>
             <li>Create a new folder named MyProject</li>
             <li>Show me the list of files in the current directory</li>
             <li>Delete the file called example.txt</li>
             </ul>
-            </section>
-            <script src="script.js"></script>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
+
