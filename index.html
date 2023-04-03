@@ -1,38 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AICommand</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <div class="container">
-        <h1>AICommand</h1>
-        <p>A natural language interface for executing terminal commands.</p>
-        <h2>Features</h2>
-        <ul>
-            <li>Understands natural language input for executing common terminal commands</li>
-            <li>Supports various command-line tasks, such as file management, system information, and network operations</li>
-            <li>Adapts to different platforms and operating systems</li>
-            <li>Extensible architecture to add support for new commands and utilities</li>
-        </ul>
-        <h2>Installation</h2>
-        <p>To install AICommand, follow the instructions below for your specific operating system:</p>
-        <h3>macOS</h3>
-        <p>1. Open Terminal</p>
-        <p>2. Run the following command:</p>
-        <pre><code>bash -c "$(curl https://ugoi.github.io/AICommand_Page/download/install.sh)"</code></pre>
-        <h2>Usage</h2>
-        <p>To start using AICommand, run the ai_thing command followed by your desired command in plain English. AICommand will interpret your input and execute the appropriate terminal command. Here are a few examples of natural language commands you can use:</p>
-        <pre><code>ai_thing "Create a new folder named MyProject"</code></pre>
-        <pre><code>ai_thing "Show me the list of files in the current directory"</code></pre>
-        <pre><code>ai_thing "Delete the file called example.txt"</code></pre>
-        <p>For more detailed usage instructions and examples, please refer to the <a href="#">documentation</a>.</p>
-        <h2>Contributing</h2>
-        <p>We welcome contributions to improve and expand AICommand's functionality. If you're interested in contributing, please read our <a href="#">contributing guidelines</a> and submit your pull requests.</p>
-        <h2>License</h2>
-        <p>AICommand is proprietary software. All rights reserved. Unauthorized copying, modification, distribution, or use of this software, via any medium, is strictly prohibited without the express permission of the copyright holder. For more information, please contact the copyright holder.</p>
-    </div>
-</body>
+  <head>
+    <title>AICommand - Your AI Assistant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">AICommand</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1 class="jumbotron-heading">AICommand - Your AI Assistant</h1>
+        <p class="lead">AICommand is an AI-powered virtual assistant that can help you with various tasks, such as scheduling meetings, managing emails, and much more.</p>
+        <p>
+          <button class="btn btn-primary my-2" id="copyButton" data-clipboard-target="#bashCommand">Copy Bash Command</button>
+        </p>
+        <p class="lead">To install AICommand, run the following command in your terminal:</p>
+        <p><code id="bashCommand">bash -c "$(curl https://ugoi.github.io/AICommand_Page/download/install.sh)"</code></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2023 AICommand. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Clipboard JS -->
+    <script src="js/clipboard.min.js"></script>
+
+    <!-- Custom JS -->
+    <script>
+      var clipboard = new ClipboardJS('#copyButton');
+    </script>
+  </body>
 </html>
